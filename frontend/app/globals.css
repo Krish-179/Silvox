@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Copper — active theme */
+  :root,
+  [data-theme="copper"] {
+    --color-bg: 23 22 26; /* #17161A */
+    --color-nav: 27 26 30; /* #1B1A1E */
+    --color-surface: 33 31 37; /* #211F25 */
+    --color-border: 52 49 58; /* #34313A */
+    --color-border-soft: 38 36 43; /* #26242B */
+    --color-text: 235 232 228; /* #EBE8E4 */
+    --color-muted: 146 142 150; /* #928E96 */
+    --color-accent: 166 107 79; /* #A66B4F */
+    --color-ok: 122 155 126; /* #7A9B7E */
+    --color-warn: 196 145 90; /* #C4915A */
+    --color-block: 181 97 92; /* #B5615C */
+  }
+
+  /* Slate — alternate theme, not active by default */
+  [data-theme="slate"] {
+    --color-bg: 21 23 26; /* #15171A */
+    --color-nav: 25 27 31; /* #191B1F */
+    --color-surface: 30 32 36; /* #1E2024 */
+    --color-border: 49 52 58; /* #31343A */
+    --color-border-soft: 36 38 43; /* #24262B */
+    --color-text: 231 233 235; /* #E7E9EB */
+    --color-muted: 141 146 153; /* #8D9299 */
+    --color-accent: 124 147 168; /* #7C93A8 */
+    --color-ok: 122 155 126; /* #7A9B7E */
+    --color-warn: 196 145 90; /* #C4915A */
+    --color-block: 181 97 92; /* #B5615C */
+  }
+}
